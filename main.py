@@ -20,7 +20,7 @@ for val in soup.find_all('script'):
 
 result_mp4 = re.search('(?P<url>https?://[^\s]+)(mp4)', result).group('url')
 
-mp4_url = result_mp4.split('"')[4]
+mp4_url = result_mp4.split('"')[7]
 print(mp4_url)
 
 print('Downloading video from ...' + mp4_url)
